@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "about": "About",
+    "plans": "Plans",
+    "products": "Products",
+    "payment": "Payment",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "region": {
+    "title": "Regional Settings",
+    "language": {
+      "label": "Language",
+      "options": {
+        "pt": "Portuguese (Brazil)",
+        "en": "English (US)",
+        "es": "Spanish (Spain)"
+      }
+    },
+    "country": {
+      "label": "Country/Region",
+      "helper": "Select your country to see local information and offers.",
+      "options": {
+        "BR": "Brazil",
+        "US": "United States",
+        "ES": "Spain"
+      }
+    },
+    "currency": {
+      "label": "Currency",
+      "options": {
+        "BRL": "BRL - R$",
+        "USD": "USD - $",
+        "EUR": "EUR - €"
+      }
+    },
+    "buttons": {
+      "save": "Save",
+      "cancel": "Cancel"
+    }
+  },
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  }
+}

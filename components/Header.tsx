@@ -1,27 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import Logo from "@/public/assets/images/logo.svg";
 import Translate from "@/public/assets/icons/translate.svg";
 import Bars from "@/public/assets/icons/bars.svg";
 import RegionModal from "./RegionModal";
 
 const menuItems = [
-  { href: "'/#'", translationKey: "about" },
-  { href: "'/#plans'", translationKey: "plans" },
-  { href: "'/#'", translationKey: "products" },
-  { href: "'/#payments'", translationKey: "payment" },
-  { href: "'/#contact'", translationKey: "contact" },
+  { href: "/#", translationKey: "about" },
+  { href: "/#plans", translationKey: "plans" },
+  { href: "/#", translationKey: "products" },
+  { href: "/#payments", translationKey: "payment" },
+  { href: "/#contact", translationKey: "contact" },
 ];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRegionModalOpen, setIsRegionModalOpen] = useState(false);
   const t = useTranslations('nav');
+  const locale = useLocale();
 
   return (
     <header className="relative z-10 bg-transparent">
@@ -129,7 +130,7 @@ export default function Header() {
                 src={Translate}
                 width={35}
                 height={35}
-                alt="Bandeira do Brasil"
+                alt="Translate icon"
                 className="rounded-full object-cover"
               />
             </button>
@@ -137,7 +138,7 @@ export default function Header() {
         </div>
       )}
 
-      <RegionModal isOpen={isRegionModalOpen} onClose={() => setIsRegionModalOpen(false)} />
+      <RegionModal isOpen={isRegionModalOpen} onClose={() => setIsRegionModalOpen(false)} key={locale} />
     </header>
   );
 }

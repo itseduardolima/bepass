@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "plans": "Planes",
+    "products": "Productos",
+    "payment": "Pago",
+    "contact": "Contacto",
+    "login": "Iniciar sesión"
+  },
+  "region": {
+    "title": "Configuración regional",
+    "language": {
+      "label": "Idioma",
+      "options": {
+        "pt": "Portugués (Brasil)",
+        "en": "Inglés (EE.UU.)",
+        "es": "Español (España)"
+      }
+    },
+    "country": {
+      "label": "País/Región",
+      "helper": "Seleccione su país para ver información y ofertas locales.",
+      "options": {
+        "BR": "Brasil",
+        "US": "Estados Unidos",
+        "ES": "España"
+      }
+    },
+    "currency": {
+      "label": "Moneda",
+      "options": {
+        "BRL": "BRL - R$",
+        "USD": "USD - $",
+        "EUR": "EUR - €"
+      }
+    },
+    "buttons": {
+      "save": "Guardar",
+      "cancel": "Cancelar"
+    },
+    "HomePage": {
+    "title": "teste",
+    "about": "teste"
+  }
+  }
+}
