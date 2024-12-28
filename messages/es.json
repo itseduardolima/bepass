@@ -38,9 +38,8 @@
       "save": "Guardar",
       "cancel": "Cancelar"
     },
-    "HomePage": {
-    "title": "teste",
-    "about": "teste"
-  }
+    "hero": {
+      "title": "Te conectamos a una nueva forma de explorar, innovar y transformar el turismo."
+    }
   }
 }

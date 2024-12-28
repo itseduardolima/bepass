@@ -39,8 +39,7 @@
       "cancel": "Cancelar"
     }
   },
-  "HomePage": {
-    "title": "Olá mundo!",
-    "about": "Ir para a pagina"
+  "hero": {
+    "title": "Conectamos você a um novo jeito de explorar, inovar e transformar o turismo."
   }
 }

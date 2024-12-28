@@ -25,7 +25,7 @@ export default function Header() {
   const locale = useLocale();
 
   return (
-    <header className="relative z-10 bg-transparent">
+    <header className="absolute top-0 left-0 right-0 z-50">
       <div className="mx-auto max-w-7xl px-4 py-5">
         <nav className="flex items-center justify-between">
           <Link href="/" className="mr-8" aria-label="PASS">
@@ -37,7 +37,7 @@ export default function Header() {
               <li key={item.translationKey}>
                 <Link
                   href={item.href}
-                  className="text-neutral-900 hover:text-primary-dark transition-colors dark:text-neutral-50"
+                  className="text-primary hover:text-text transition-colors"
                 >
                   {t(item.translationKey)}
                 </Link>
@@ -63,7 +63,7 @@ export default function Header() {
             </div>
             <Link
               href="#"
-              className="hidden rounded-full bg-neutral-900 px-4 py-2 font-semibold text-white transition-colors hover:bg-transparent hover:text-neutral-900 hover:ring-2 hover:ring-neutral-900 lg:block dark:bg-neutral-50 dark:hover:text-neutral-50 dark:hover:ring-neutral-50"
+              className="hidden rounded-full bg-primary px-4 py-2 font-semibold text-white transition-colors hover:bg-transparent hover:text-neutral-900 hover:ring-2 hover:ring-neutral-900 lg:block"
             >
               {t('login')}
             </Link>
@@ -73,7 +73,7 @@ export default function Header() {
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <X className="h-8 w-8 p-1 text-gray-400 border rounded-full dark:text-neutral-50" />
+                <X className="h-8 w-8 p-1 text-gray-400 border rounded-full" />
               ) : (
                 <Image
                   src={Bars}
@@ -89,20 +89,20 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-white px-4 pt-16 lg:hidden dark:bg-neutral-900">
+        <div className="fixed inset-0 z-50 flex flex-col bg-white px-4 pt-16 lg:hidden">
           <button
             className="absolute top-4 right-4 p-2"
             onClick={() => setIsMenuOpen(false)}
             aria-label="Fechar menu"
           >
-            <X className="h-8 w-8 p-1 text-gray-400 border rounded-full dark:text-neutral-50" />
+            <X className="h-8 w-8 p-1 text-gray-400 border rounded-full" />
           </button>
           <ul className="mt-20 space-y-6">
             {menuItems.map((item) => (
               <li key={item.translationKey}>
                 <Link
                   href={item.href}
-                  className="text-4xl font-semibold text-neutral-900 transition-transform hover:translate-x-2 dark:text-neutral-50"
+                  className="text-4xl font-semibold text-neutral-900 transition-transform hover:translate-x-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {t(item.translationKey)}
@@ -113,7 +113,7 @@ export default function Header() {
           <div className="mt-auto flex items-center justify-between pb-8">
             <Link
               href="#"
-              className="rounded-full bg-neutral-900 px-4 py-2 font-semibold text-white dark:bg-neutral-50"
+              className="rounded-full bg-neutral-900 px-4 py-2 font-semibold text-white "
               onClick={() => setIsMenuOpen(false)}
             >
               {t('login')}

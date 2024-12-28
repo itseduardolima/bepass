@@ -115,13 +115,14 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
           <Button
             onClick={handleSave}
             className="w-full rounded-xl bg-neutral-900 font-semibold text-white hover:bg-neutral-800"
+            variant="default"
           >
             {t('buttons.save')}
           </Button>
           <Button
             onClick={onClose}
-            variant="secondary"
-            className="w-full bg-neutral-200 font-semibold rounded-xl hover:bg-neutral-200"
+            variant="ghost"
+            className="w-full text-neutral-700 bg-neutral-300 font-semibold rounded-xl hover:bg-neutral-200"
           >
             {t('buttons.cancel')}
           </Button>

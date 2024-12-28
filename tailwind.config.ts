@@ -1,20 +1,25 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
-    darkMode: ["class"],
-    content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-  	extend: {
-  		colors: {
-  			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
-  		},
-  	}
+    extend: {
+      colors: {
+        primary: 'var(--primary-color)',
+        text: 'var(--text-color)',
+        background: 'var(--background-color)',
+      },
+      fontFamily: {
+        sans: ['var(--font-family)'],
+      },
+      transitionDuration: {
+        DEFAULT: 'var(--transition-speed)',
+      },
+    },
   },
-  plugins: [require("tailwindcss-animate")],
-};
-export default config;
+  plugins: [],
+}
+
