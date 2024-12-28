@@ -37,9 +37,9 @@
     "buttons": {
       "save": "Guardar",
       "cancel": "Cancelar"
-    },
-    "hero": {
-      "title": "Te conectamos a una nueva forma de explorar, innovar y transformar el turismo."
     }
+  },
+  "hero": {
+    "title": "Te conectamos a una nueva forma de explorar, innovar y transformar el turismo."
   }
 }
