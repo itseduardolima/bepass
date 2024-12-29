@@ -18,7 +18,7 @@ export default function Hero() {
           priority
           quality={100}
         />
-        <div className="relative z-10 bottom-40 container mx-auto px-4">
+        <div className="relative z-10 bottom-32 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center ">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-primary">
               {t('title')}

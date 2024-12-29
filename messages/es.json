@@ -11,6 +11,7 @@
     "title": "Configuración regional",
     "language": {
       "label": "Idioma",
+      "switchToEnglish": "Cambiar a inglés",
       "options": {
         "pt": "Portugués (Brasil)",
         "en": "Inglés (EE.UU.)",
@@ -41,5 +42,20 @@
   },
   "hero": {
     "title": "Te conectamos a una nueva forma de explorar, innovar y transformar el turismo."
+  },
+  "experience": {
+    "title": "Vive una nueva experiencia",
+    "description": "¿Estás listo para la evolución del turismo?",
+    "parks_agencies": "Parques y Agencias",
+    "hotels_resorts": "Hoteles y Resorts",
+    "bars_restaurants": "Bares y Restaurantes",
+    "business_companies": "Negocios y Empresas",
+    "see_more": "Ver más",
+    "alt": {
+      "parks_agencies": "Imagen de parque",
+      "hotels_resorts": "Imagen de hotel",
+      "bars_restaurants": "Imagen de bar",
+      "business_companies": "Imagen de negocios"
+    }
   }
 }
