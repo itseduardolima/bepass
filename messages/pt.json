@@ -57,5 +57,17 @@
       "bars_restaurants": "Imagem de bar",
       "business_companies": "Imagem de negócios"
     }
+  },
+  "partners": {
+    "title": "Connect to our partner network",
+    "description": "By integrating your operation with PASS, you gain access to a collaborative environment where products and services can be distributed efficiently and strategically. Expand your target audience, increase your market presence, and offer complete experiences that delight customers.",
+    "how_it_works": "How it works",
+    "building_alt": "PASS Building"
+  },
+  "virtual_store": {
+    "title": "Loja Virtual B2C",
+    "description": "Proporcione aos seus clientes uma experiência de reserva intuitiva e sem complicações. Com o nosso motor de servas B2C, você pode atrair e converter mais clientes, sem pagar comissões por cada reserva.",
+    "schedule_demo": "Agende uma demonstração",
+    "interface_alt": "Interface de reservas mostrando uma cabana amarela"
   }
 }
