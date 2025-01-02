@@ -99,5 +99,24 @@
     "title": "Intelligent management for your business",
     "description": "With our backoffice management solution, you gain total control over your operation. Manage reservations, payments, billing, and access detailed reports and performance analytics, all in an integrated, modern, and intuitive platform",
     "see_our_products": "See our products"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "faq_question_1": "What is PASS?",
+    "faq_answer_1": "PASS is an integrated management and distribution platform for the tourism and experiences sector. We offer solutions for reservation management, online sales, payments, and much more.",
+    "faq_question_2": "How can PASS help my business?",
+    "faq_answer_2": "PASS helps optimize your operations, increase your sales, and improve customer experience. Our platform offers tools to manage reservations, create a virtual store, process payments, and gain valuable insights about your business.",
+    "faq_question_3": "What types of businesses can use PASS?",
+    "faq_answer_3": "PASS is ideal for a variety of businesses in the tourism and experiences sector, including parks, travel agencies, hotels, resorts, bars, restaurants, and companies offering activities and experiences.",
+    "faq_question_4": "How does the integration process work?",
+    "faq_answer_4": "Our integration process is simple and guided. After signing up, our support team will help you set up your account, import your products or services, and customize your virtual store. We offer training to ensure you get the most out of our platform.",
+    "faq_question_5": "What are the costs of using PASS?",
+    "faq_answer_5": "We offer different plans to meet the needs of various types and sizes of businesses. Our pricing is transparent and based on the features you need. Contact us for a personalized quote.",
+    "faq_question_6": "Does PASS offer technical support?",
+    "faq_answer_6": "Yes, we offer dedicated technical support for all our customers. Our team is available to help with any questions or issues you may encounter while using our platform.",
+    "faq_question_7": "How does PASS handle data security?",
+    "faq_answer_7": "Data security is a top priority for us. We use advanced encryption technologies and follow industry best practices to protect the information of our clients and their users.",
+    "faq_question_8": "Can I try PASS before committing?",
+    "faq_answer_8": "Yes, we offer a free demo so you can experience PASS features before committing. Contact us to schedule your personalized demonstration."
   }
 }

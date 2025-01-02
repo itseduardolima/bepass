@@ -99,5 +99,24 @@
     "title": "Gestão inteligente para o seu negócio",
     "description": "Com a nossa solução de gestão de backoffice, você ganha controle total sobre sua operação. Gerencie reservas, pagamentos, faturamento e tenha acesso a relatórios detalhados e análises de desempenho, tudo em uma plataforma integrada, moderna e intuitiva",
     "see_our_products": "Ver nossos produtos"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "faq_question_1": "O que é o PASS?",
+    "faq_answer_1": "O PASS é uma plataforma integrada de gestão e distribuição para o setor de turismo e experiências. Oferecemos soluções para gerenciamento de reservas, vendas online, pagamentos e muito mais.",
+    "faq_question_2": "Como o PASS pode ajudar meu negócio?",
+    "faq_answer_2": "O PASS ajuda a otimizar suas operações, aumentar suas vendas e melhorar a experiência do cliente. Nossa plataforma oferece ferramentas para gerenciar reservas, criar uma loja virtual, processar pagamentos e obter insights valiosos sobre seu negócio.",
+    "faq_question_3": "Quais tipos de negócios podem usar o PASS?",
+    "faq_answer_3": "O PASS é ideal para uma variedade de negócios no setor de turismo e experiências, incluindo parques, agências de turismo, hotéis, resorts, bares, restaurantes e empresas que oferecem atividades e experiências.",
+    "faq_question_4": "Como funciona o processo de integração?",
+    "faq_answer_4": "Nosso processo de integração é simples e guiado. Após se inscrever, nossa equipe de suporte irá ajudá-lo a configurar sua conta, importar seus produtos ou serviços e personalizar sua loja virtual. Oferecemos treinamento para garantir que você aproveite ao máximo nossa plataforma.",
+    "faq_question_5": "Quais são os custos para usar o PASS?",
+    "faq_answer_5": "Oferecemos diferentes planos para atender às necessidades de diversos tipos e tamanhos de negócios. Nossos preços são transparentes e baseados nas funcionalidades que você precisa. Entre em contato conosco para obter uma cotação personalizada.",
+    "faq_question_6": "O PASS oferece suporte técnico?",
+    "faq_answer_6": "Sim, oferecemos suporte técnico dedicado para todos os nossos clientes. Nossa equipe está disponível para ajudar com quaisquer questões ou problemas que você possa encontrar ao usar nossa plataforma.",
+    "faq_question_7": "Como o PASS lida com a segurança dos dados?",
+    "faq_answer_7": "A segurança dos dados é uma prioridade máxima para nós. Utilizamos tecnologias de criptografia avançadas e seguimos as melhores práticas da indústria para proteger as informações de nossos clientes e seus usuários.",
+    "faq_question_8": "Posso experimentar o PASS antes de me comprometer?",
+    "faq_answer_8": "Sim, oferecemos uma demonstração gratuita para que você possa experimentar as funcionalidades do PASS antes de se comprometer. Entre em contato conosco para agendar sua demonstração personalizada."
   }
 }
