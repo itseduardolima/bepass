@@ -118,5 +118,11 @@
     "faq_answer_7": "La seguridad de los datos es una prioridad máxima para nosotros. Utilizamos tecnologías de encriptación avanzadas y seguimos las mejores prácticas de la industria para proteger la información de nuestros clientes y sus usuarios.",
     "faq_question_8": "¿Puedo probar PASS antes de comprometerme?",
     "faq_answer_8": "Sí, ofrecemos una demostración gratuita para que pueda experimentar las funciones de PASS antes de comprometerse. Contáctenos para programar su demostración personalizada."
+  },
+  "footer": {
+    "be_pass": "Sé Pass, sé libre",
+    "address": "Dirección",
+    "follow_us": "Síguenos",
+    "copyright": "Copyright 2024 - Todos los derechos reservados."
   }
 }

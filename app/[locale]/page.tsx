@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Experience from "@/components/sections/Experience";
 import FAQ from "@/components/sections/FAQ";
@@ -22,6 +23,7 @@ export default function HomePage() {
       <Rates />
       <Management />
       <FAQ />
+      <Footer />
     </>
   );
 }

@@ -118,5 +118,11 @@
     "faq_answer_7": "Data security is a top priority for us. We use advanced encryption technologies and follow industry best practices to protect the information of our clients and their users.",
     "faq_question_8": "Can I try PASS before committing?",
     "faq_answer_8": "Yes, we offer a free demo so you can experience PASS features before committing. Contact us to schedule your personalized demonstration."
+  },
+  "footer": {
+    "be_pass": "Be Pass, be free",
+    "address": "Address",
+    "follow_us": "Follow us",
+    "copyright": "Copyright 2024 - All rights reserved."
   }
 }
