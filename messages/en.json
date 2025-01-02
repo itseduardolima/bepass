@@ -69,5 +69,25 @@
     "description": "Provide your customers with an intuitive and hassle-free booking experience. With our B2C booking engine, you can attract and convert more customers without paying commissions for each reservation.",
     "schedule_demo": "Schedule a demo",
     "interface_alt": "Booking interface showing a yellow cabin"
+  },
+  "plans": {
+    "title": "Our Plans",
+    "subtitle": "Choose the ideal plan for your business",
+    "basic": "Basic",
+    "travel": "Travel",
+    "label": "Label",
+    "descricao_basic": "Ideal for managing your product catalog and reservations",
+    "descricao_experience": "Ideal for opening your product catalog with your own e-commerce",
+    "descricao_label": "Expand your sales channels by seeking partnerships providing technology",
+    "produtos": "Products",
+    "reservas": "Reservations",
+    "ecommerce": "E-commerce",
+    "afiliados": "Affiliates",
+    "plans_button": "Learn more",
+    "preco_mensal": "per month",
+    "livre_para_sempre": "free forever",
+    "save": "Save",
+    "best_deal": "Best deal",
+    "extra_months": "+3 EXTRA months"
   }
 }

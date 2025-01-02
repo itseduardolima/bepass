@@ -69,5 +69,25 @@
     "description": "Proporcione aos seus clientes uma experiência de reserva intuitiva e sem complicações. Com o nosso motor de servas B2C, você pode atrair e converter mais clientes, sem pagar comissões por cada reserva.",
     "schedule_demo": "Agende uma demonstração",
     "interface_alt": "Interface de reservas mostrando uma cabana amarela"
+  },
+  "plans": {
+    "title": "Nossos Planos",
+    "subtitle": "Escolha o plano ideal para o seu negócio",
+    "basic": "Basic",
+    "travel": "Travel",
+    "label": "Label",
+    "descricao_basic": "Ideal para gerenciar o seu catálogo de produtos e suas reservas",
+    "descricao_experience": "Ideal para abrir o seu catálogo de produtos com seu próprio e-commerce",
+    "descricao_label": "Amplie seus canais de venda buscando parcerias fornecendo tecnologia",
+    "produtos": "Produtos",
+    "reservas": "Reservas",
+    "ecommerce": "E-commerce",
+    "afiliados": "Afiliados",
+    "plans_button": "Saiba mais",
+    "preco_mensal": "por mês",
+    "livre_para_sempre": "livre para sempre",
+    "save": "Economize",
+    "best_deal": "Melhor oferta",
+    "extra_months": "+3 meses EXTRA"
   }
 }
