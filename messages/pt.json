@@ -89,5 +89,10 @@
     "save": "Economize",
     "best_deal": "Melhor oferta",
     "extra_months": "+3 meses EXTRA"
+  },
+  "rates": {
+    "title": "As melhores taxas do mercado",
+    "description": "Pagamentos seguros, suporte 24/7 e taxas competitivas para garantir eficiência e tranquilidade em cada transação. Com integração completa ao ecossistema PASS, você tem controle e praticidade para focar no crescimento do seu negócio.",
+    "image_alt": "Pessoa utilizando cartão PASS"
   }
 }

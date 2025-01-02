@@ -89,5 +89,10 @@
     "save": "Ahorre",
     "best_deal": "Mejor oferta",
     "extra_months": "+3 meses EXTRA"
+  },
+  "rates": {
+    "title": "Las mejores tarifas del mercado",
+    "description": "Pagos seguros, soporte 24/7 y tarifas competitivas para garantizar eficiencia y tranquilidad en cada transacción. Con integración completa al ecosistema PASS, tienes control y practicidad para enfocarte en el crecimiento de tu negocio.",
+    "image_alt": "Persona usando tarjeta PASS"
   }
 }

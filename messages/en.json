@@ -89,5 +89,10 @@
     "save": "Save",
     "best_deal": "Best deal",
     "extra_months": "+3 EXTRA months"
+  },
+  "rates": {
+    "title": "The best rates in the market",
+    "description": "Secure payments, 24/7 support, and competitive rates to ensure efficiency and peace of mind in every transaction. With complete integration into the PASS ecosystem, you have control and convenience to focus on growing your business.",
+    "image_alt": "Person using PASS card"
   }
 }
