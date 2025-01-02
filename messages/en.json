@@ -94,5 +94,10 @@
     "title": "The best rates in the market",
     "description": "Secure payments, 24/7 support, and competitive rates to ensure efficiency and peace of mind in every transaction. With complete integration into the PASS ecosystem, you have control and convenience to focus on growing your business.",
     "image_alt": "Person using PASS card"
+  },
+  "management": {
+    "title": "Intelligent management for your business",
+    "description": "With our backoffice management solution, you gain total control over your operation. Manage reservations, payments, billing, and access detailed reports and performance analytics, all in an integrated, modern, and intuitive platform",
+    "see_our_products": "See our products"
   }
 }

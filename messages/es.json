@@ -94,5 +94,10 @@
     "title": "Las mejores tarifas del mercado",
     "description": "Pagos seguros, soporte 24/7 y tarifas competitivas para garantizar eficiencia y tranquilidad en cada transacción. Con integración completa al ecosistema PASS, tienes control y practicidad para enfocarte en el crecimiento de tu negocio.",
     "image_alt": "Persona usando tarjeta PASS"
+  },
+  "management": {
+    "title": "Gestión inteligente para tu negocio",
+    "description": "Con nuestra solución de gestión de backoffice, obtienes control total sobre tu operación. Gestiona reservas, pagos, facturación y accede a informes detallados y análisis de rendimiento, todo en una plataforma integrada, moderna e intuitiva",
+    "see_our_products": "Ver nuestros productos"
   }
 }

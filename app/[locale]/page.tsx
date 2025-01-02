@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Experience from "@/components/sections/Experience";
 import Hero from "@/components/sections/Hero";
+import Management from "@/components/sections/Management";
 import Partners from "@/components/sections/Partners";
 import PassCardShowcase from "@/components/sections/PassCardShowcase";
 import Plans from "@/components/sections/Plans";
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Plans />
       <PassCardShowcase />
       <Rates />
+      <Management />
     </>
   );
 }
