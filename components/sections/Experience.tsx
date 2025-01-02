@@ -35,56 +35,43 @@ export default function ExperienceSection() {
     let isDown = false;
     let startX: number;
     let scrollLeft: number;
-    let velocity = 0;
-    let rafId: number | null = null;
 
-    const handleMouseDown = (e: MouseEvent) => {
+    const handleStart = (e: MouseEvent | TouchEvent) => {
       isDown = true;
-      slider.style.cursor = "grabbing";
-      startX = e.pageX - slider.offsetLeft;
+      slider.classList.add('active');
+      startX = 'touches' in e ? e.touches[0].pageX : e.pageX;
       scrollLeft = slider.scrollLeft;
-      cancelAnimationFrame(rafId!);
     };
 
-    const handleMouseLeave = () => {
+    const handleEnd = () => {
       isDown = false;
-      slider.style.cursor = "grab";
+      slider.classList.remove('active');
     };
 
-    const handleMouseUp = () => {
-      isDown = false;
-      slider.style.cursor = "grab";
-      animateScroll();
-    };
-
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMove = (e: MouseEvent | TouchEvent) => {
       if (!isDown) return;
       e.preventDefault();
-      const x = e.pageX - slider.offsetLeft;
+      const x = 'touches' in e ? e.touches[0].pageX : e.pageX;
       const walk = (x - startX) * 2;
-      const prevScrollLeft = slider.scrollLeft;
       slider.scrollLeft = scrollLeft - walk;
-      velocity = slider.scrollLeft - prevScrollLeft;
     };
 
-    const animateScroll = () => {
-      if (Math.abs(velocity) > 0.1) {
-        slider.scrollLeft += velocity * 0.95;
-        velocity *= 0.95;
-        rafId = requestAnimationFrame(animateScroll);
-      }
-    };
-
-    slider.addEventListener("mousedown", handleMouseDown);
-    slider.addEventListener("mouseleave", handleMouseLeave);
-    slider.addEventListener("mouseup", handleMouseUp);
-    slider.addEventListener("mousemove", handleMouseMove);
+    slider.addEventListener('mousedown', handleStart);
+    slider.addEventListener('touchstart', handleStart);
+    slider.addEventListener('mouseleave', handleEnd);
+    slider.addEventListener('mouseup', handleEnd);
+    slider.addEventListener('touchend', handleEnd);
+    slider.addEventListener('mousemove', handleMove);
+    slider.addEventListener('touchmove', handleMove);
 
     return () => {
-      slider.removeEventListener("mousedown", handleMouseDown);
-      slider.removeEventListener("mouseleave", handleMouseLeave);
-      slider.removeEventListener("mouseup", handleMouseUp);
-      slider.removeEventListener("mousemove", handleMouseMove);
+      slider.removeEventListener('mousedown', handleStart);
+      slider.removeEventListener('touchstart', handleStart);
+      slider.removeEventListener('mouseleave', handleEnd);
+      slider.removeEventListener('mouseup', handleEnd);
+      slider.removeEventListener('touchend', handleEnd);
+      slider.removeEventListener('mousemove', handleMove);
+      slider.removeEventListener('touchmove', handleMove);
     };
   }, []);
 
@@ -99,13 +86,13 @@ export default function ExperienceSection() {
         </div>
         <div
           ref={scrollContainerRef}
-          className="w-full overflow-x-hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
+          className="w-full overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing select-none"
         >
-          <div className="flex pb-5 space-x-5">
+          <div className="flex pb-5 space-x-4 md:space-x-5 px-4 md:px-0">
             {experiences.map((exp) => (
               <div
                 key={exp.titleKey}
-                className="w-80 flex-shrink-0 rounded-2xl overflow-hidden relative"
+                className="w-[280px] md:w-80 flex-shrink-0 rounded-2xl overflow-hidden relative"
               >
                 <Image
                   draggable="false"
