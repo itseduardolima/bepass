@@ -8,7 +8,7 @@ export default function VirtualStore() {
   const t = useTranslations('virtual_store');
 
   return (
-    <section className="py-32 md:py-80 px-4 max-w-7xl mx-auto overflow-hidden">
+    <section className="pt-32 md:pt-80 px-4 max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-32">
         <div className="w-full md:w-[460px] flex flex-col">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-6 leading-tight">
