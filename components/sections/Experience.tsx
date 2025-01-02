@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowRight } from 'lucide-react';
 import { experiences } from "@/mock/experiences";
