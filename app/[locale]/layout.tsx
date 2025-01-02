@@ -3,6 +3,7 @@ import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {Locale, routing} from '@/i18n/routing';
 import '../globals.css'
+import { CurrencyProvider } from '@/contexts/CurrencyContext';
  
 export default async function LocaleLayout({
   children,
@@ -20,9 +21,11 @@ export default async function LocaleLayout({
  
   return (
     <html lang={locale}>
-      <body>
+       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <CurrencyProvider>
+            {children}
+          </CurrencyProvider>
         </NextIntlClientProvider>
       </body>
     </html>

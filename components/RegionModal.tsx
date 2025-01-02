@@ -19,6 +19,7 @@ import { useTranslations } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/routing';
 import { useLocale } from 'next-intl';
 import { useState } from 'react';
+import { useCurrency } from '@/contexts/CurrencyContext';
 
 interface RegionModalProps {
   isOpen: boolean;
@@ -31,6 +32,7 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
   const pathname = usePathname();
   const currentLocale = useLocale();
   const [selectedLanguage, setSelectedLanguage] = useState(currentLocale);
+  const { currency, setCurrency } = useCurrency();
 
   const handleSave = () => {
     if (selectedLanguage !== currentLocale) {
@@ -57,7 +59,7 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
                   className="text-blue-500 text-sm"
                   onClick={() => setSelectedLanguage('en')}
                 >
-                  Switch to English
+                  {t('language.switchToEnglish')}
                 </button>
               )}
             </div>
@@ -98,7 +100,7 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
               <DollarSign className="h-5 w-5 text-gray-600" />
               <span className="font-medium">{t('currency.label')}</span>
             </div>
-            <Select defaultValue="BRL">
+            <Select value={currency} onValueChange={setCurrency}>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder={t('currency.label')} />
               </SelectTrigger>
@@ -115,14 +117,13 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
           <Button
             onClick={handleSave}
             className="w-full rounded-xl bg-neutral-900 font-semibold text-white hover:bg-neutral-800"
-            variant="default"
           >
             {t('buttons.save')}
           </Button>
           <Button
             onClick={onClose}
-            variant="ghost"
-            className="w-full text-neutral-700 bg-neutral-300 font-semibold rounded-xl hover:bg-neutral-200"
+            variant="secondary"
+            className="w-full bg-neutral-200 font-semibold rounded-xl hover:bg-neutral-200"
           >
             {t('buttons.cancel')}
           </Button>
