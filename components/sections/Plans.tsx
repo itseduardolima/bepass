@@ -139,7 +139,7 @@ function PlanCard({ plan }: { plan: Plan }) {
 
   if (plan.bestDeal) {
     return (
-      <div className="bg-gradient-to-b from-neutral-800 to-black rounded-3xl px-2 pb-2 pt-6 w-full max-w-[380px] -mt-[70px]">
+      <div className="bg-gradient-to-b from-neutral-800 to-black rounded-3xl px-2 pb-2 pt-6 w-full max-w-[380px] md:-mt-[70px]">
         <div className="flex items-center justify-center gap-1 text-white mb-3">
           <img src="./public/assets/icons/seta-baixo.png" alt="" className="mt-4" />
           <span className="text-xl">{t("best_deal")}</span>

@@ -32,7 +32,7 @@ export default function FAQSection() {
       <h2 className="text-4xl md:text-5xl font-semibold text-primary mb-12 text-center">
         {t('title')}
       </h2>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 md:gap-8">
         <Accordion type="single" collapsible className="w-full">
           {faqData.slice(0, 4).map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`}>

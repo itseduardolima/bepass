@@ -7,7 +7,7 @@ export default function Rates() {
   const t = useTranslations('rates');
 
   return (
-    <section id="payments" className="pb-36 px-5 lg:px-0">
+    <section id="payments" className="pb-24 px-5 lg:px-0">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div className="order-2 lg:order-1 lg:ml-24">
           <Image
