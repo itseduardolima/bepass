@@ -3,26 +3,9 @@
 import { useRef, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import { useTranslations } from "next-intl";
-
-// Import images
-import ParkImage from "@/public/assets/images/park.webp";
-import HotelImage from "@/public/assets/images/hotel.webp";
-import BarImage from "@/public/assets/images/bar.webp";
-import BusinessImage from "@/public/assets/images/negocios.jpg";
 import { ArrowRight } from 'lucide-react';
+import { experiences } from "@/mock/experiences";
 
-
-export interface Experience {
-  titleKey: string;
-  image: StaticImageData;
-}
-
-const experiences: Experience[] = [
-  { titleKey: "parks_agencies", image: ParkImage },
-  { titleKey: "hotels_resorts", image: HotelImage },
-  { titleKey: "bars_restaurants", image: BarImage },
-  { titleKey: "business_companies", image: BusinessImage },
-];
 
 export default function ExperienceSection() {
   const t = useTranslations("experience");
@@ -86,7 +69,7 @@ export default function ExperienceSection() {
         </div>
         <div
           ref={scrollContainerRef}
-          className="w-full overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing select-none"
+          className="w-full overflow-x-auto md:overflow-hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
         >
           <div className="flex pb-5 space-x-4 md:space-x-5 px-4 md:px-0">
             {experiences.map((exp) => (
