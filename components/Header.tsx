@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { X, ChevronDown } from 'lucide-react';
+import { X, ChevronDown } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Logo from "@/public/assets/images/logo.svg";
@@ -82,7 +82,7 @@ export default function Header() {
           </div>
 
           <motion.div
-            className="flex items-center gap-4"
+            className="flex items-center gap-7"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -93,23 +93,17 @@ export default function Header() {
               whileTap={{ scale: 0.95 }}
             >
               <button
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 text-primary"
                 aria-label="Selecionar idioma e região"
                 onClick={() => setIsRegionModalOpen(true)}
               >
-                <Image
-                  src={Translate}
-                  width={27}
-                  height={27}
-                  alt="Button translate"
-                  className="rounded-full object-cover"
-                />
+                {t("language")}
               </button>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="#"
-                className="hidden text-primary rounded-full bg-[#6c697d0d] border border-[#bdbbc9] px-4 py-2 lg:block"
+                className="hidden text-primary rounded-full bg-[#6c697d0d] border border-[#bdbbc9] px-8 py-4 lg:block"
               >
                 {t("login")}
               </Link>
@@ -182,13 +176,7 @@ export default function Header() {
                   setIsRegionModalOpen(true);
                 }}
               >
-                <Image
-                  src={Translate}
-                  width={27}
-                  height={27}
-                  alt="Button translate"
-                  className="rounded-full object-cover"
-                />
+                {t("language")}
               </button>
             </div>
           </motion.div>
@@ -196,9 +184,7 @@ export default function Header() {
       </AnimatePresence>
 
       <AnimatePresence>
-        {isMegaMenuOpen && (
-          <MegaMenu isOpen={isMegaMenuOpen} />
-        )}
+        {isMegaMenuOpen && <MegaMenu isOpen={isMegaMenuOpen} />}
       </AnimatePresence>
 
       <RegionModal

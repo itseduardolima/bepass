@@ -5,7 +5,8 @@
     "products": "Products",
     "payment": "Payment",
     "contact": "Contact",
-    "login": "Login"
+    "login": "Login",
+    "language": "English (US)"
   },
   "region": {
     "title": "Regional Settings",
