@@ -59,10 +59,10 @@
     }
   },
   "partners": {
-    "title": "Connect to our partner network",
-    "description": "By integrating your operation with PASS, you gain access to a collaborative environment where products and services can be distributed efficiently and strategically. Expand your target audience, increase your market presence, and offer complete experiences that delight customers.",
-    "how_it_works": "How it works",
-    "building_alt": "PASS Building"
+    "title": "Conecte-se a nossa rede de parceiros",
+    "description": "Ao integrar sua operação ao PASS, você ganha acesso a um ambiente colaborativo, onde produtos e serviços podem ser distribuídos de forma eficiente e estratégica. Expanda seu público-alvo, amplie sua presença no mercado e ofereça experiências completas que encantam os clientes.",
+    "how_it_works": "Como funciona",
+    "building_alt": "Prédio PASS"
   },
   "virtual_store": {
     "title": "Loja Virtual B2C",
