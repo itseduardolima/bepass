@@ -55,7 +55,7 @@ export default function VirtualStore() {
           <div className="relative w-full max-w-[600px] mx-auto">
             <Image
               src={ComputerFrame}
-              alt=""
+              alt="Computer"
               className="w-full h-auto"
               priority
             />

@@ -57,16 +57,16 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">{t('follow_us')}</h3>
             <div className="flex gap-6">
               <a href="#" aria-label="Instagram">
-                <Image src={InstagramIcon} alt="" width={20} height={20} />
+                <Image src={InstagramIcon} alt="logo instagram" width={20} height={20} />
               </a>
               <a href="#" aria-label="Twitter">
-                <Image src={TwitterIcon} alt="" width={20} height={20} className="invert" />
+                <Image src={TwitterIcon} alt="logo x" width={20} height={20} className="invert" />
               </a>
               <a href="#" aria-label="YouTube">
-                <Image src={YouTubeIcon} alt="" width={20} height={20} />
+                <Image src={YouTubeIcon} alt="logo youtube" width={20} height={20} />
               </a>
               <a href="#" aria-label="LinkedIn">
-                <Image src={LinkedInIcon} alt="" width={20} height={20} className="invert" />
+                <Image src={LinkedInIcon} alt="logo linkedIn" width={20} height={20} className="invert" />
               </a>
             </div>
           </div>

@@ -11,7 +11,7 @@ export default function Management() {
       <div className="absolute inset-0 ">
         <Image
           src={LaptopUser}
-          alt=""
+          alt="Laptop"
           fill
           className="object-cover object-left-center scale-x-[-1]"
           priority

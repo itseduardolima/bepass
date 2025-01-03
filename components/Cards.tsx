@@ -98,7 +98,7 @@ export function PlanCard({
         <div className="flex items-center justify-center gap-2 text-white mb-3">
           <Image
             src={ArrowDownIcon}
-            alt=""
+            alt="arrow down"
             width={20}
             height={20}
             className="mt-4"
