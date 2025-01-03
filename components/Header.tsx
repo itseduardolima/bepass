@@ -162,7 +162,7 @@ export default function Header() {
             <div className="mt-auto flex items-center justify-between pb-8">
               <Link
                 href="#"
-                className="rounded-full bg-[#6c697d0d] border border-[#bdbbc9] px-4 py-2 text-primary"
+                className="rounded-full bg-[#6c697d0d] border border-[#bdbbc9] px-8 py-4 text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("login")}
