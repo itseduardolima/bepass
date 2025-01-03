@@ -6,7 +6,6 @@ import { X, ChevronDown } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Logo from "@/public/assets/images/logo.svg";
-import Translate from "@/public/assets/icons/translate.svg";
 import Bars from "@/public/assets/icons/bars.svg";
 import RegionModal from "./RegionModal";
 import MegaMenu from "./MegaMenu";
