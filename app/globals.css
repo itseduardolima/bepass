@@ -15,6 +15,33 @@
     @apply m-0 p-0 box-border;
   }
 
+  html.custom-scroll,
+  html.custom-scroll body {
+    scrollbar-width: thin;
+    scrollbar-color: #88888880 #f1f1f1;
+  }
+
+  html.custom-scroll::-webkit-scrollbar,
+  html.custom-scroll body::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  html.custom-scroll::-webkit-scrollbar-track,
+  html.custom-scroll body::-webkit-scrollbar-track {
+    background: #e4e4e4;
+  }
+
+  html.custom-scroll::-webkit-scrollbar-thumb,
+  html.custom-scroll body::-webkit-scrollbar-thumb {
+    background: #b9b9b9;
+    border-radius: 15px;
+  }
+
+  html.custom-scroll::-webkit-scrollbar-thumb:hover,
+  html.custom-scroll body::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+  }
+
   body {
     font-family: var(--font-family);
     background-color: var(--background-color);
@@ -23,24 +50,5 @@
 
   button {
     font-family: var(--font-family);
-  }
-}
-
-@layer utilities {
-  .scrollbar::-webkit-scrollbar {
-    width: 9px;
-  }
-
-  .scrollbar::-webkit-scrollbar-track {
-    background: #e4e4e4;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: #b9b9b9;
-    border-radius: 15px;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: var(--text-color);
   }
 }
