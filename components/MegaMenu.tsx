@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 
 interface ServiceCard {
   title: string;
@@ -10,11 +9,9 @@ interface ServiceCard {
 
 interface MegaMenuProps {
   isOpen: boolean;
-  onClose: () => void;
 }
 
-export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
-  const t = useTranslations("products");
+export default function MegaMenu({ isOpen }: MegaMenuProps) {
 
   const services: ServiceCard[] = [
     {

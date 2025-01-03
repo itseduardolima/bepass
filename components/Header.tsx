@@ -197,7 +197,7 @@ export default function Header() {
 
       <AnimatePresence>
         {isMegaMenuOpen && (
-          <MegaMenu isOpen={isMegaMenuOpen} onClose={() => setIsMegaMenuOpen(false)} />
+          <MegaMenu isOpen={isMegaMenuOpen} />
         )}
       </AnimatePresence>
 
