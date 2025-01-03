@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import ComputerFrame from "@/public/assets/images/computer.png";
 import WebsiteScreen from "@/public/assets/images/website.webp";
@@ -17,7 +17,7 @@ export default function VirtualStore() {
   return (
     <motion.section
       ref={sectionRef}
-      className="pt-32 md:pt-96 px-4 max-w-7xl mx-auto overflow-hidden"
+      className="pt-40 md:pt-96 px-4 max-w-7xl mx-auto overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: isInView ? 1 : 0 }}
       transition={{ duration: 0.5 }}
@@ -35,15 +35,11 @@ export default function VirtualStore() {
           <p className="text-base md:text-lg text-text mb-8">
             {t("description")}
           </p>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Button variant="outline" className="px-5 py-2 w-fit group">
-              <span className="font-medium">{t("schedule_demo")}</span>
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-          </motion.div>
+
+          <Button variant="outline" className="px-5 py-2 w-fit group">
+            <span className="font-medium">{t("schedule_demo")}</span>
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Button>
         </motion.div>
 
         <motion.div

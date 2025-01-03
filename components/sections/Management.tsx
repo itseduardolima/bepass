@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import LaptopUser from "@/public/assets/images/laptop-user.webp";
 import { Button } from "../ui/button";
@@ -43,15 +43,11 @@ export default function Management() {
           <p className="text-base md:text-lg text-text mb-8">
             {t("description")}
           </p>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Button variant="outline" className="group">
-              {t("see_our_products")}
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-          </motion.div>
+
+          <Button variant="outline" className="group">
+            {t("see_our_products")}
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Button>
         </motion.div>
       </div>
     </motion.section>

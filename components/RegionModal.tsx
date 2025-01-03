@@ -50,9 +50,9 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
         <div className="space-y-6 py-4">
           <div className="space-y-2">
             <div className="flex justify-between">
-              <div className="flex items-center gap-2">
-                <Languages className="h-5 w-5 text-gray-600" />
-                <span className="font-medium">{t('language.label')}</span>
+              <div className="flex items-center text-primary gap-2">
+                <Languages className="h-5 w-5" />
+                <span className="font-medium ">{t('language.label')}</span>
               </div>
               {selectedLanguage !== 'en' && (
                 <button 
@@ -76,8 +76,8 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
           </div>
 
           <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <Globe className="h-5 w-5 text-gray-600" />
+            <div className="flex items-center text-primary gap-2">
+              <Globe className="h-5 w-5" />
               <span className="font-medium">{t('country.label')}</span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -96,8 +96,8 @@ export default function RegionModal({ isOpen, onClose }: RegionModalProps) {
           </div>
 
           <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <DollarSign className="h-5 w-5 text-gray-600" />
+            <div className="flex items-center text-primary gap-2">
+              <DollarSign className="h-5 w-5" />
               <span className="font-medium">{t('currency.label')}</span>
             </div>
             <Select value={currency} onValueChange={setCurrency}>

@@ -37,7 +37,7 @@ export function PlanCard({
       )}
     >
       {plan.badge && (
-        <div className="absolute top-8 right-8 bg-gradient-to-b from-neutral-800 to-black text-white px-4 py-1.5 rounded-full text-sm font-medium">
+        <div className="absolute top-8 right-8 bg-primary text-white px-4 py-1.5 rounded-full text-sm font-medium">
           <span>{t(plan.save)}</span> {plan.badge}
         </div>
       )}
@@ -86,7 +86,7 @@ export function PlanCard({
         ))}
       </ul>
 
-      <button className="w-full py-3.5 px-4 bg-gradient-to-b from-neutral-800 to-black text-white rounded-full text-base font-medium hover:opacity-90 transition-opacity">
+      <button className="w-full py-3.5 px-4 bg-primary text-white rounded-full text-base font-medium hover:opacity-90 transition-opacity">
         {t(plan.buttonText)}
       </button>
     </div>
@@ -94,7 +94,7 @@ export function PlanCard({
 
   if (plan.bestDeal) {
     return (
-      <div className="bg-gradient-to-b from-neutral-800 to-black rounded-3xl px-2 pb-2 pt-6 w-full max-w-[380px] md:-mt-[70px]">
+      <div className="bg-primary rounded-3xl px-2 pb-2 pt-6 w-full max-w-[380px] md:-mt-[70px]">
         <div className="flex items-center justify-center gap-2 text-white mb-3">
           <Image
             src={ArrowDownIcon}

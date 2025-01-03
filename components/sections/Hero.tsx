@@ -44,8 +44,8 @@ export default function Hero() {
 
       <div className="relative w-full">
         <motion.div
-          initial={{ opacity: 0, x: -170, y: 100 }}
-          animate={{ opacity: 1, x: -170, y: -230 }}
+          initial={{ opacity: 0, x: -190, y: 100 }}
+          animate={{ opacity: 1, x: -190, y: -230 }}
           transition={{ delay: 1, duration: 1, type: "spring", stiffness: 100 }}
           className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-sm mx-auto px-4"
         >

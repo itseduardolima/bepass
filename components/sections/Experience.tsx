@@ -112,7 +112,7 @@ export default function Experience() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
-                    <ArrowRight className="text-primary" />
+                    <ArrowRight className="text-primary h-5" />
                   </motion.button>
                 </div>
               </motion.div>
