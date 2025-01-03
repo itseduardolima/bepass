@@ -9,6 +9,7 @@ import Logo from "@/public/assets/images/logo.svg";
 import Translate from "@/public/assets/icons/translate.svg";
 import Bars from "@/public/assets/icons/bars.svg";
 import RegionModal from "./RegionModal";
+import { motion } from 'framer-motion';
 
 const menuItems = [
   { href: "/#", translationKey: "about" },
@@ -25,28 +26,28 @@ export default function Header() {
   const locale = useLocale();
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
+    <motion.header className="absolute top-0 left-0 right-0 z-50" initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, damping: 20 }}>
       <div className="mx-auto max-w-7xl px-4 py-5">
         <nav className="flex items-center justify-between">
           <Link href="/" className="mr-8" aria-label="PASS">
             <Image src={Logo} width={120} height={40} alt="PASS logo" />
           </Link>
 
-          <ul className="hidden gap-8 lg:flex">
+          <motion.ul className="hidden gap-8 lg:flex" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, staggerChildren: 0.1 }}>
             {menuItems.map((item) => (
-              <li key={item.translationKey}>
+              <motion.li key={item.translationKey} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   href={item.href}
                   className="text-primary hover:text-text transition-colors"
                 >
                   {t(item.translationKey)}
                 </Link>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
 
-          <div className="flex items-center gap-4">
-            <div className="relative hidden lg:block">
+          <motion.div className="flex items-center gap-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}>
+            <motion.div className="relative hidden lg:block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <button
                 className="flex items-center gap-2"
                 aria-label="Selecionar idioma e região"
@@ -60,18 +61,16 @@ export default function Header() {
                   className="rounded-full object-cover"
                 />
               </button>
-            </div>
-            <Link
-              href="#"
-              className="hidden rounded-full bg-primary px-4 py-2 font-semibold text-white transition-colors hover:bg-transparent hover:text-neutral-900 hover:ring-2 hover:ring-neutral-900 lg:block"
-            >
-              {t('login')}
-            </Link>
-            <button
-              className="lg:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="#"
+                className="hidden rounded-full bg-primary px-4 py-2 font-semibold text-white transition-colors hover:bg-transparent hover:text-neutral-900 hover:ring-2 hover:ring-neutral-900 lg:block"
+              >
+                {t('login')}
+              </Link>
+            </motion.div>
+            <motion.button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               {isMenuOpen ? (
                 <X className="h-8 w-8 p-1 text-gray-400 border rounded-full" />
               ) : (
@@ -83,13 +82,13 @@ export default function Header() {
                   className="rounded-full object-cover"
                 />
               )}
-            </button>
-          </div>
+            </motion.button>
+          </motion.div>
         </nav>
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-white px-4 pt-16 lg:hidden">
+        <motion.div className="fixed inset-0 z-50 flex flex-col bg-white px-4 pt-16 lg:hidden" initial={{ x: "-100%" }} animate={{ x: 0 }} exit={{ x: "-100%" }} transition={{ type: "spring", stiffness: 300, damping: 30 }}>
           <button
             className="absolute top-4 right-4 p-2"
             onClick={() => setIsMenuOpen(false)}
@@ -135,10 +134,10 @@ export default function Header() {
               />
             </button>
           </div>
-        </div>
+        </motion.div>
       )}
 
       <RegionModal isOpen={isRegionModalOpen} onClose={() => setIsRegionModalOpen(false)} key={locale} />
-    </header>
+    </motion.header>
   );
 }
