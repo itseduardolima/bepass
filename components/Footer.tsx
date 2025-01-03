@@ -1,17 +1,29 @@
-import Image from 'next/image';
-import { useTranslations } from 'next-intl';
-import Buildings from '@/public/assets/images/buildings.webp';
-import PassLogo from '@/public/assets/images/logo.svg';
-import InstagramIcon from '@/public/assets/icons/instagram.png';
-import TwitterIcon from '@/public/assets/icons/twitter.svg';
-import YouTubeIcon from '@/public/assets/icons/youtube.svg';
-import LinkedInIcon from '@/public/assets/icons/linkedin.svg';
+"use client";
+
+import { useRef } from "react";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { motion, useInView } from "framer-motion";
+import Buildings from "@/public/assets/images/buildings.webp";
+import PassLogo from "@/public/assets/images/logo.svg";
+import InstagramIcon from "@/public/assets/icons/instagram.png";
+import TwitterIcon from "@/public/assets/icons/twitter.svg";
+import YouTubeIcon from "@/public/assets/icons/youtube.svg";
+import LinkedInIcon from "@/public/assets/icons/linkedin.svg";
 
 export default function Footer() {
-  const t = useTranslations('footer');
+  const t = useTranslations("footer");
+  const footerRef = useRef(null);
+  const isInView = useInView(footerRef, { once: true, amount: 0.3 });
 
   return (
-    <footer className="relative bg-black text-white min-h-screen flex flex-col overflow-hidden">
+    <motion.footer
+      ref={footerRef}
+      className="relative bg-black text-white min-h-screen flex flex-col overflow-hidden"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="absolute top-0 left-0 w-full h-2/5 overflow-hidden">
         <Image
           src={Buildings}
@@ -24,7 +36,12 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 pt-96 pb-20 w-full flex flex-col gap-80">
-        <div className="text-center mt-8">
+        <motion.div
+          className="text-center mt-8"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: isInView ? 0 : 50, opacity: isInView ? 1 : 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <Image
             src={PassLogo}
             alt="PASS"
@@ -32,12 +49,17 @@ export default function Footer() {
             height={40}
             className="mx-auto mb-4 invert"
           />
-          <p className="text-base text-white">{t('be_pass')}</p>
-        </div>
+          <p className="text-base text-white">{t("be_pass")}</p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: isInView ? 0 : 50, opacity: isInView ? 1 : 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <div>
-            <h3 className="text-base font-semibold mb-4">{t('address')}</h3>
+            <h3 className="text-base font-semibold mb-4">{t("address")}</h3>
             <p className="text-sm mb-2">Canela, Rio Grande do Sul</p>
             <p className="text-sm mb-2">Porto Alegre, Rio Grande do Sul</p>
             <p className="text-sm mb-2">São Paulo, São Paulo</p>
@@ -54,28 +76,75 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">{t('follow_us')}</h3>
+            <h3 className="text-white font-semibold mb-4">{t("follow_us")}</h3>
             <div className="flex gap-6">
-              <a href="#" aria-label="Instagram">
-                <Image src={InstagramIcon} alt="logo instagram" width={20} height={20} />
-              </a>
-              <a href="#" aria-label="Twitter">
-                <Image src={TwitterIcon} alt="logo x" width={20} height={20} className="invert" />
-              </a>
-              <a href="#" aria-label="YouTube">
-                <Image src={YouTubeIcon} alt="logo youtube" width={20} height={20} />
-              </a>
-              <a href="#" aria-label="LinkedIn">
-                <Image src={LinkedInIcon} alt="logo linkedIn" width={20} height={20} className="invert" />
-              </a>
+              <motion.a
+                href="#"
+                aria-label="Instagram"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Image
+                  src={InstagramIcon}
+                  alt="logo instagram"
+                  width={20}
+                  height={20}
+                />
+              </motion.a>
+              <motion.a
+                href="#"
+                aria-label="Twitter"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Image
+                  src={TwitterIcon}
+                  alt="logo x"
+                  width={20}
+                  height={20}
+                  className="invert"
+                />
+              </motion.a>
+              <motion.a
+                href="#"
+                aria-label="YouTube"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Image
+                  src={YouTubeIcon}
+                  alt="logo youtube"
+                  width={20}
+                  height={20}
+                />
+              </motion.a>
+              <motion.a
+                href="#"
+                aria-label="LinkedIn"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Image
+                  src={LinkedInIcon}
+                  alt="logo linkedIn"
+                  width={20}
+                  height={20}
+                  className="invert"
+                />
+              </motion.a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="text-center">
-          <p className="text-sm">{t('copyright')}</p>
-        </div>
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isInView ? 1 : 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <p className="text-sm">{t("copyright")}</p>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
